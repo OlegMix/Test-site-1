@@ -1,0 +1,9 @@
+.list_title li {
+    list-style-type: none; /* Убираем маркеры */
+    margin-top: 20px;
+}
+
+.list_mtitle li {
+	list-style-type: circle;
+	margin-top: 10px;
+}

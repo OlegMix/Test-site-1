@@ -1,0 +1,54 @@
+h4{
+	margin-top: 8px;
+}
+
+.questionnaire h4 {
+	text-align: center;
+}
+
+.name_block {
+	width: 425px;
+	float: left;
+	line-height: 26px;
+}
+
+.field_block {
+	width: 325px;
+	float: left;
+}
+
+.field_block input{
+	width: 300px;
+	margin-bottom: 5px;
+}
+
+.questionnaire {
+	padding: 5px;
+	width: 750px;
+	height: auto;
+	background: #e0ffff;
+}
+
+.question:hover {
+	background: #B9F1FF;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	-moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.question td{
+	padding: 5px 5px 5px 5px;
+}
+
+.contacts {
+	margin-bottom: 5px;
+	padding: 5px;
+	height: 190px;
+	width: 750px;
+	background: #e0ffff;
+}
+
+.submit {
+	margin: 10px;
+	float: right;
+}
