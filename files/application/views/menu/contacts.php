@@ -18,7 +18,23 @@
 		<td>
 			<a href="tel:88166031471">8 (816-60) 31-471</a>
 		</td>
-		<td></td>
+		<td rowspan="6"></td>
+	</tr>
+	<tr>
+		<td>
+			<b>E-mail:</b>
+		</td>
+		<td>
+			<a href="mailto:MVSTOM@mail.ru">mvstom@mail.ru</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Сайт:</b>
+		</td>
+		<td>
+			<a href="http://mvstomzdrav53.ru/">http://mvstomzdrav53.ru/</a> 
+		</td>
 	</tr>
 	<tr>
 		<td>
@@ -27,7 +43,22 @@
 		<td>
 			Ядрина Татьяна Петровна
 		</td>
-		<td></td>
+	</tr>
+	<tr>
+		<td>
+			<b>Заведующий отделением:</b>
+		</td>
+		<td>
+			Байкова Анна Геннадьевна
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Медицинские регистраторы:</b>
+		</td>
+		<td>
+			Александрова Маргарита Александровна<br>Симонова Наталья Владимировна
+		</td>
 	</tr>
 	<tr>
 		<td rowspan="4">

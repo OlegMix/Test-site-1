@@ -1,0 +1,2 @@
+[Mon Jan 11 03:55:01.254908 2016] [access_compat:error] [pid 2072:tid 1652] [client 127.0.0.1:62981] AH01797: client denied by server configuration: C:/xampp/htdocs/Websites/Test-site-1/files/public/content/specialist/agreement/.pdf, referer: http://my-work.loc/employees
+[Mon Jan 11 03:55:30.420577 2016] [access_compat:error] [pid 2072:tid 1728] [client 127.0.0.1:62987] AH01797: client denied by server configuration: C:/xampp/htdocs/Websites/Test-site-1/files/public/content/specialist/agreement/.pdf, referer: http://my-work.loc/employees

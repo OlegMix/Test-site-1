@@ -147,11 +147,17 @@ Kohana::modules(array(
  * defaults for the URI.
  */
 
-Route::set('menu','<action>', array('action' => 'institutions|population|specialists|nocorruption|news|quality|contacts|employees|questionnaire'))
+Route::set('menu','<action>', array('action' => 'institutions|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
 	->defaults(array(
 		'controller' => 'Menu',
 	));
 	
+Route::set('page_news','news(/<id>.html)', array('id' => '.+'))
+	->defaults(array(
+		'controller' => 'Menu',
+		'action'     => 'news',
+	));
+
 Route::set('default', '(<controller>(/<action>(/<id>)))')
         ->defaults(array(
             'controller' => 'Basic',

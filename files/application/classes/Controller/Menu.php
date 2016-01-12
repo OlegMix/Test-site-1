@@ -24,12 +24,13 @@ class Controller_Menu extends Controller_Template {
         $this->template->content = $content;
 	}
 
-	public function action_specialists()
+	public function action_vacancies()
 	{
-		$content = View::factory('menu');
-		$this->template->styles = array('style');
-		$content->section = array('Вакансии','Полезная информация');
-		$this->template->title = 'Специалистам';
+		$content = View::factory('menu/vacancies') ->bind('vacancies', $vacancies);
+		$vacancies = Model::factory('select') ->vacancies();
+
+		$this->template->styles = array('style','menu/table');
+		$this->template->title = 'Вакансии';
         $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
@@ -45,11 +46,25 @@ class Controller_Menu extends Controller_Template {
 
 	public function action_news()
 	{
-		$content = View::factory('menu/news');
-		$this->template->styles = array('style','menu/news');
-		$this->template->title = 'Новости';
-        $this->template->description = 'Стоматология';
-        $this->template->content = $content;
+		$id = $this->request->param('id');
+ 		$this->template->styles = array('style','menu/news');
+ 		$this->template->description = 'Стоматология';
+
+        if($id) {
+            $content = View::factory('pages/news') ->bind('news', $news);
+            $news = Model::factory('select')->news_one($id);
+            $this->template->title = $news['title'];
+            $content->article = $id;
+            
+        }
+        else {
+            $this->template->title = 'Новости';
+
+			$content = View::factory('menu/news') ->bind('news', $news);
+			$news = Model::factory('select')->news_m();
+        }
+ 
+       	$this->template->content = $content;
 	}
 
 	public function action_quality()
@@ -64,14 +79,9 @@ class Controller_Menu extends Controller_Template {
 
 	public function action_questionnaire()
 	{
-		$content = View::factory('menu/questionnaire') ->bind('articles', $articles);
-
 		$articles = array();
-
-		$article = new Model_Article();
-        $articles = $article->get_all();
-
-		// $articles = Model::factory('article')->get_all();
+		$content = View::factory('menu/questionnaire') ->bind('articles', $articles);
+		$articles = Model::factory('select')->questions();
 
 		$this->template->styles = array('style','menu/questionnaire');
 		$this->template->title = 'Анкета';
@@ -87,10 +97,13 @@ class Controller_Menu extends Controller_Template {
         $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
+
 	public function action_employees()
 	{
-		$content = View::factory('menu/employees');
-		$this->template->styles = array('style','menu/employees');
+		$content = View::factory('menu/employees') ->bind('employees', $employees);
+		$employees = Model::factory('select')->employees();
+
+		$this->template->styles = array('style','menu/table');
 		$this->template->title = 'Наши специалисты';
         $this->template->description = 'Стоматология';
         $this->template->content = $content;

@@ -59,9 +59,9 @@ foreach($scripts as $script): ?>
 						</ul>
 					</li>
 					<li>
-					<a href="<?php echo URL::base(); ?>specialists">Специалистам</a>
+					<a href="#">Специалистам</a>
 						<ul>
-							<li><a href="#">Вакансии</a></li>
+							<li><a href="<?php echo URL::base(); ?>vacancies">Вакансии</a></li>
 							<li><a href="<?php echo URL::base(); ?>public/content/specialist/information_specialists.doc">Полезная информация</a></li>
 						</ul>
 					</li>
@@ -105,7 +105,7 @@ foreach($scripts as $script): ?>
 				<b>Телефон приемной (факс):</b><br><a href="tel:88166031471"><h5>8 (816-60) 31-471</h5></a>
 			</div>
 			<div class="bottom_a">
-				<b>Адрес электронной почты:</b><br><a href="mailto:MVSTOM@mail.ru"><h5>MVSTOM@mail.ru</h5></a>
+				<b>Адрес электронной почты:</b><br><a href="mailto:MVSTOM@mail.ru"><h5>MVStom@mail.ru</h5></a>
 			</div>
 			<div class="bottom_a">
 				<b>Техническая поддержка:</b><br><a href="mailto:TechPST53@mail.ru"><h5>TechPST53@mail.ru</h5></a>
