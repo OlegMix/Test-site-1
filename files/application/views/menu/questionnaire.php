@@ -1,23 +1,25 @@
-<div class="contacts">
-	<h4>КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-	<div class="name_block">
-		Имя:<br>
-		Фамилия:<br>
-		Отчество:<br>
-		Адрес электронной почты:<br>
+<h3>АНКЕТА:</h3>
+<form>
+	<div class="contacts" id="contacts">
+		<h4 >КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+		<div class="name_block">
+			Имя:<br>
+			Фамилия:<br>
+			Отчество:<br>
+			Адрес электронной почты:<br>
+		</div>
+		<div class="field_block">
+			<input class="field" type="text" name="name" disabled><br>
+			<input class="field" type="text" name="family" disabled><br>
+			<input class="field" type="text" name="lastname" disabled><br>
+			<input class="field" type="text" name="mail" disabled><br>
+		</div>
+		<div class="field_block_2">
+			<input type="checkbox" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете заполнить анкету анонимно
+		</div>
 	</div>
-	<div class="field_block">
-		<input class="field" type="text" name="name" disabled><br>
-		<input class="field" type="text" name="family" disabled><br>
-		<input class="field" type="text" name="lastname" disabled><br>
-		<input class="field" type="text" name="mail" disabled><br>
-	</div>
-	<input type="checkbox" id="on" name="anonymously" value="anonymously" checked> Вы можете заполнить анкету анонимно
-</div>
-
-<div class="questionnaire">
-	<h4>АНКЕТА</h4>
-	<form>
+	<div class="questionnaire">
+		<h4>ОТВЕТЬТЕ ПОЖАЛУЙСТА НА ВОПРОСЫ</h4>
 		<table border="1px">
 		<?php foreach($articles as $article): ?>
 			<tr class="question">
@@ -37,17 +39,8 @@
 			</tr>
 		<?php endforeach; ?>
 		</table>
-		<div style="height:35px;"><input type="submit" class="submit" value="Отправить" ></div>
-	</form>
-</div>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-$(function (){
-	$('#on').click(function (){
-		$('input').attr('disabled',true);
-	});
-	$('#osn').click(function (){
-		$('input').removeAttr('disabled');
-	});
-});
-</script>
+		<div style="height:35px;">
+			<input type="submit" class="submit" value="Отправить" >
+		</div>
+	</div>
+</form>

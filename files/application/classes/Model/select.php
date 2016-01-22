@@ -2,6 +2,19 @@
  
 class Model_Select extends Model
 {
+	public function regulations()
+	{
+		return DB::select()
+			->from("regulations")
+			->execute();
+	}
+
+	public function charter()
+	{
+		return DB::select()
+			->from("charter")
+			->execute();
+	}
 
 	public function questions()
 	{
@@ -44,11 +57,13 @@ class Model_Select extends Model
 			->from("employees")
 			->execute();
 	}
+
+	public function fast_link()
+    {
+        return DB::select()
+            ->from("quick_links")
+            ->where('active', '=', "1")
+            ->execute();
+    }
 }
 
-// public function ()
-//     {
-//         return DB::select()
-//             ->from("")
-//             ->execute();
-//     }

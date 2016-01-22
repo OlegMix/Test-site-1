@@ -3,11 +3,11 @@
 class Model_Insert extends Model
 {
 
-public function ()
-    {
-        return DB::select()
-            ->from("")
-            ->execute();
-    }
+	public function ()
+	    {
+	        return DB::insert()
+	            ->from("")
+	            ->execute();
+	    }
 	
 }

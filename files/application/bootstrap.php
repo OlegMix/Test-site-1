@@ -130,7 +130,7 @@ Kohana::modules(array(
 	// 'minion'     => MODPATH.'minion',     // CLI Tasks
 	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
 
 /**
@@ -147,7 +147,7 @@ Kohana::modules(array(
  * defaults for the URI.
  */
 
-Route::set('menu','<action>', array('action' => 'institutions|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
+Route::set('menu','<action>', array('action' => 'regulations|charter|goals_and_objectives|structure|general_information|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
 	->defaults(array(
 		'controller' => 'Menu',
 	));

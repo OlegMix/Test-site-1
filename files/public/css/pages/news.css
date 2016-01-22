@@ -1,0 +1,29 @@
+.image_news {
+	float: left;
+	max-height: 500px;
+	max-width: 500px;
+	min-width: 200px;
+	min-height: 200px;
+	margin: 0 20px 10px 0;
+}
+
+.text {
+	text-align: justify;
+}
+
+.text p{
+	margin: 10px 0 10px 0;
+	text-indent: 30px;
+}
+
+.title_n h2 {
+	text-indent: 50px;
+	margin: 10px;
+}
+
+.title_n h5 {
+	text-align: right;
+	font-style: italic;
+	margin: 0px;
+	color: #999999;
+}

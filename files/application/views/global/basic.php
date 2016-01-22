@@ -20,14 +20,19 @@
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="theme-color" content="#ffffff">
 
-<?php foreach($styles as $style): ?>
-    <link href="<?php echo URL::base(); ?>public/css/<?php echo $style; ?>.css" rel="stylesheet" type="text/css" />
-<?php endforeach; ?>
+<link href="<?php echo URL::base(); ?>public/css/style.css" rel="stylesheet" type="text/css" />
+
+<?php if(isset($styles)) {
+		foreach($styles as $style): 
+		    echo "<link href='".URL::base()."public/css/".$style.".css' rel='stylesheet' type='text/css' />";
+		endforeach; 
+	}?>
 
 <?php if(isset($scripts)) {
-foreach($scripts as $script): ?>
-    <script src="<?php echo URL::base(); ?>public/script/<?php echo $script; ?>.js" ></script>
-<?php endforeach; }?>
+		foreach($scripts as $script): 
+		    echo "<script src='".URL::base()."public/script/".$script.".js' ></script>";
+		endforeach; 
+	}?>
 
 </head>
 <body>
@@ -42,24 +47,24 @@ foreach($scripts as $script): ?>
 			<div class="menu">
 				<ul id="menu">
 					<li>
-						<a href="<?php echo URL::base(); ?>institutions">Учреждение</a>
+						<h4>Учреждение</h4>
 						<ul>
-							<li><a href="#">Общяя информация</a></li>
-							<li><a href="#">Устав</a></li>
-							<li><a href="#">Деклорации целей и задач</a></li>
-							<li><a href="#">Структура учреждения</a></li>
-							<li><a href="#">Нормативные документы</a></li>
+							<li><a href="<?php echo URL::base(); ?>general_information">Общяя информация</a></li>
+							<li><a href="<?php echo URL::base(); ?>charter">Устав</a></li>
+							<li><a href="<?php echo URL::base(); ?>goals_and_objectives">Деклорации целей и задач</a></li>
+							<li><a href="<?php echo URL::base(); ?>structure">Структура учреждения</a></li>
+							<li><a href="<?php echo URL::base(); ?>regulations">Нормативные документы</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="<?php echo URL::base(); ?>population">Населению</a>
+						<h4>Населению</h4>
 						<ul>
 							<li><a href="http://www.zdrav53-online.ru">Запись на прием к врачу</a></li>
 							<li><a href="<?php echo URL::base(); ?>public/content/population/population_information.doc">Полезная информация</a></li>
 						</ul>
 					</li>
 					<li>
-					<a href="#">Специалистам</a>
+						<h4>Специалистам</h4>
 						<ul>
 							<li><a href="<?php echo URL::base(); ?>vacancies">Вакансии</a></li>
 							<li><a href="<?php echo URL::base(); ?>public/content/specialist/information_specialists.doc">Полезная информация</a></li>
@@ -72,14 +77,14 @@ foreach($scripts as $script): ?>
 						<a href="<?php echo URL::base(); ?>news">Новости</a>
 					</li>
 					<li>
-						<a href="<?php echo URL::base(); ?>quality">Качество обслуживания</a>
+						<h4>Качество обслуживания</h4>
 						<ul>
 							<li><a href="<?php echo URL::base(); ?>questionnaire">Анкета</a></li>
 							<li><a href="#">Вопрос-ответ (форум)</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="">Контакты</a>
+						<h4>Контакты</h4>
 						<ul>
 							<li><a href="<?php echo URL::base(); ?>contacts">Контактная информация</a></li>
 							<li><a href="<?php echo URL::base(); ?>employees">Специалисты</a></li>
@@ -89,11 +94,22 @@ foreach($scripts as $script): ?>
 			</div>
 		</div>
 	</div>
+	<?php if (isset($link)) {  ?>
+			<div class='fast_link'>
+				<h3>Полезное:</h3>
+				<?php foreach($link as $link1): ?>
+					<div class='fl_one'>
+						<div class='fl_color' style='background: radial-gradient(#fff,<?php echo $link1['color']; ?>);'></div>
+						<a href="<?php echo $link1['links']; ?>"><?php echo $link1['title']; ?></a> 
+					</div>
+				<?php endforeach; ?>
+			</div>
+	<?php }?>
 	<div class="content">
 		<?php echo $content; ?>
-		<div class="basement_menu">
-			<a href="<?php echo URL::base(); ?>">Главная</a>&nbsp|&nbsp<a href="<?php echo URL::base(); ?>menu/news">Новости</a>&nbsp|&nbsp<a href="http://www.zdrav53-online.ru">Записаться на прием</a>
-		</div>
+	</div>
+	<div class="basement_menu">
+		<a href="<?php echo URL::base(); ?>">Главная</a>&nbsp|&nbsp<a href="<?php echo URL::base(); ?>menu/news">Новости</a>&nbsp|&nbsp<a href="http://www.zdrav53-online.ru">Записаться на прием</a>
 	</div>
 	<div class="basement">
 		<div class="copyright">
