@@ -7,8 +7,8 @@ class Controller_Basic extends Controller_Template {
 	public function action_index()
 	{
 		$content = View::factory('home');
-		$this->template->scripts = array('jquery-1.6.1.min','slides');
-		$this->template->styles = array('style','home');
+		$this->template->styles = array('style','home','menu/table');
+		$this->template->link = Model::factory('select') ->fast_link();
 		$this->template->title = 'ГОБУЗ "Маловишерская стоматологическая поликлиника"';
         $this->template->content = $content;
 	}

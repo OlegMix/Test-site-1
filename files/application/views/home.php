@@ -1,28 +1,34 @@
-<div id="page-wrap">
-	<h2>Новости</h2>
-	<div id="rotator">
-		<div id="block-1" class="active">
-			<h2>Новость 1</h1>
-			<div>
-				<h1>Новость 1</h1>
-				<img src="spacefrog.jpg" alt="space frog">
-				<p>Commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-			</div>
-		</div>
-		<div id="block-2" class="non-active-top">
-			<h2>Новость 2</h2>
-			<div>
-				<h1>Новость 2</h1>
-				<img src="goblins.jpg" alt="goblins">
-				<p>Ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-			</div>			
-		</div>
-		<div id="block-3" class="non-active-bottom">
-			<h2>Новость 3</h2>
-			<div>
-				<h1>You May Find Yourself Living in a Shotgun Shack</h1>
-				<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-			</div>			
-		</div>
-	</div>
-</div>
+<h1>Государственное областное бюджетное учреждение здравоохранения «Маловишерская стоматологическая поликлиника»</h1>
+<img src="<?php echo URL::base(); ?>public/image/system/photo_01.png" class="photo">
+<table>
+	<tr>
+		<td colspan="3" align="center"><b>Режим работы:</b></td>
+	</tr>
+	<tr>
+		<td>
+			Стоматологическая поликлиника по адресу г. Малая Вишера, ул. Лесная, д. 19<br><br>
+			Прием: ежедневно<br><br>
+			Запись на утренний прием:<br>
+			-первого пациента с 9:00 часов,<br>
+			-последнего пациента 13:30 часов;<br><br>
+			Запись на вечерний прием:<br>
+			-первого пациента с 15:00 часов,<br>
+			-последнего пациента 19:00 часов.<br>
+		</td>
+		<td width="200px">
+			Стоматологический кабинет по адресу г. Малая Вишера, пер. 2-й Набережный, д. 20 (здание поликлиники ГОБУЗ «Маловишерская ЦРБ») кабинет № 21<br><br>
+			Прием: по средам с 09:00 до 15:30<br><br>
+			Без предварительной записи<br>
+		</td>
+		<td width="200px">
+			Стоматологический кабинет по адресу Маловишерский район, деревня Бурга, ул. Новгородская, д. 34Б (здание Бургинского ЦОВП)<br><br>
+			Прием: вторник, четверг<br><br>
+			Запись по телефону: <a href="tel:88166037637">37-637</a><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="right">
+			<a href="<?php echo URL::base(); ?>contacts">Перейти к контактной информации ></a>
+		</td>
+	</tr>
+</table>

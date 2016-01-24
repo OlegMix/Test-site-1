@@ -97,12 +97,16 @@ a:visited {
 
 .fast_link h3{
     text-align: center;
-    margin: 10px 0px;
+    margin: 10px 5px;
 }
 
 .fl_one a{
     color: #00406b;
     font-size: 20px;
+}
+
+.fl_one {
+    margin: 5px;
 }
 
 .fl_one a:hover {
