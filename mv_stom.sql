@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 22 2016 г., 10:42
+-- Время создания: Янв 25 2016 г., 10:28
 -- Версия сервера: 5.6.21
 -- Версия PHP: 5.6.3
 
@@ -118,14 +118,15 @@ CREATE TABLE IF NOT EXISTS `quick_links` (
   `color` varchar(7) NOT NULL,
   `active` int(11) NOT NULL,
   `title` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `quick_links`
 --
 
 INSERT INTO `quick_links` (`id_links`, `links`, `color`, `active`, `title`) VALUES
-(1, 'fff', 'red', 1, 'Тестирование');
+(1, 'fff', 'blue', 1, 'Тестирование'),
+(2, 'http://www.zdrav53-online.ru', 'red', 1, 'Запись на прием');
 
 -- --------------------------------------------------------
 
@@ -303,7 +304,7 @@ MODIFY `id_questions` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT для таблицы `quick_links`
 --
 ALTER TABLE `quick_links`
-MODIFY `id_links` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id_links` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT для таблицы `regulations`
 --
