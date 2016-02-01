@@ -38,7 +38,7 @@ class Controller_Menu extends Controller_Template {
 	{
 		$content = View::factory('menu/structure');
 		$this->template->title = 'Структура учреждения';
-		$this->template->styles = array('menu/table');
+		$this->template->styles = array('menu/structure');
         $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;

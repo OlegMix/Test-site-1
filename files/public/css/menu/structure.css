@@ -1,0 +1,41 @@
+@font-face { 
+	font-family:"Arial";
+	font-variant:normal;
+	font-style:normal;
+	font-weight:normal;
+	src:url("#FontID0") format(svg)
+}
+
+.str0 {
+	stroke:black;
+	stroke-width:20
+}
+
+.fil0 {
+	fill:none
+}
+
+.fil1 {
+	fill:black
+}
+
+.fil2 {
+	fill:black;
+	fill-rule:nonzero
+}
+
+.fnt1 {
+	font-weight:normal;
+	font-size:246.94px;
+	font-family:'Arial'
+}
+
+.fnt0 {
+	font-weight:normal;
+	font-size:282.22px;
+	font-family:'Arial'
+}
+
+.structure {
+	margin: 0 100px 0 100px;
+}
