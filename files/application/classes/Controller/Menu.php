@@ -14,6 +14,27 @@ class Controller_Menu extends Controller_Template {
         $this->template->content = $content;
 	}
 
+	public function action_pricelist() 
+	{
+		$content = View::factory('menu/pricelist');
+		$this->template->title = 'Прейскурант';
+		$this->template->styles = array('menu/pricelist');
+        $this->template->description = 'Стоматология';
+        $this->template->link = Model::factory('select') ->fast_link();
+        $this->template->content = $content;
+	}
+
+	public function action_list_services() 
+	{
+		$content = View::factory('menu/list_services');
+		$this->template->title = 'Перечень оказываемых услуг';
+		$this->template->styles = array('menu/list_services');
+        $this->template->description = 'Стоматология';
+        $this->template->link = Model::factory('select') ->fast_link();
+        $this->template->content = $content;
+	}
+
+
 	public function action_charter()
 	{
 		$content = View::factory('menu/charter') ->bind('charter', $charter);
@@ -44,6 +65,17 @@ class Controller_Menu extends Controller_Template {
         $this->template->content = $content;
 	}
 
+	public function action_forum()
+	{
+		$content = View::factory('menu/forum');
+		$this->template->title = 'Форум';
+		$this->template->styles = array('menu/forum');
+		$this->template->link = Model::factory('select') ->fast_link();
+		$this->template->scripts = array('locking2');
+        $this->template->description = 'Стоматология';
+        $this->template->content = $content;
+	}
+
 	public function action_goals_and_objectives()
 	{
 		$content = View::factory('menu/goalsobj');
@@ -58,7 +90,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/vacancies') ->bind('vacancies', $vacancies);
 		$vacancies = Model::factory('select') ->vacancies();
 		$this->template->link = Model::factory('select') ->fast_link();
-
 		$this->template->styles = array('menu/table');
 		$this->template->title = 'Вакансии';
         $this->template->description = 'Стоматология';

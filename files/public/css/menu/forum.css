@@ -1,0 +1,53 @@
+h4{
+	margin-top: 8px;
+}
+
+.anonyms {
+	border-top: 2px dotted #808080;
+	border-bottom: 2px dotted #808080;
+	width: 750px;
+	margin: 20px 0 20px 0;
+	padding: 15px 0 15px 0;
+	float: left;
+}
+
+.field {
+	margin-bottom: 5px;
+}
+
+.contacts {
+	margin-bottom: 5px;
+	padding: 10px;
+	width: 755px;
+	background: linear-gradient(to top, #e6e6e6, #fafafa);
+	border-radius: 5px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.submit {
+	border-top: 2px dotted #808080;
+	width: 750px;
+	margin: 20px 0 0px 0;
+	padding: 15px 0 0 0;
+}
+
+.contacts textarea {
+	height: 130px;
+	width: 743px;
+	resize: none;
+}
+
+.block_1 {
+	float: left;
+	width: 530px;
+	line-height: 24px;
+}
+
+.block_2 {
+	float: left;
+	/*width: 240px;*/
+}
+
+/*.block_2 input[type="text"] {
+	width: 220px;
+}*/

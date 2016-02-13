@@ -140,14 +140,21 @@ Kohana::modules(array(
  * If you have not defined a cookie salt in your Cookie class then
  * uncomment the line below and define a preferrably long salt.
  */
-// Cookie::$salt = NULL;
+
+Cookie::$salt = "r832rn233";
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
 
-Route::set('menu','<action>', array('action' => 'regulations|charter|goals_and_objectives|structure|general_information|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
+Route::set('search','<action>', array('action' => 'search'))
+	->defaults(array(
+		'controller' => 'Basic',
+		'action'     => 'search',
+	));
+
+Route::set('menu','<action>', array('action' => 'forum|list_services|pricelist|regulations|charter|goals_and_objectives|structure|general_information|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
 	->defaults(array(
 		'controller' => 'Menu',
 	));

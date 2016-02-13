@@ -12,4 +12,12 @@ class Controller_Basic extends Controller_Template {
 		$this->template->title = 'ГОБУЗ "Маловишерская стоматологическая поликлиника"';
         $this->template->content = $content;
 	}
-} // 
+
+	public function action_search()
+	{
+		$content = View::factory('search');
+		$this->template->styles = array('style');
+		$this->template->title = 'ГОБУЗ "Маловишерская стоматологическая поликлиника"';
+        $this->template->content = $content;
+	}
+} 
