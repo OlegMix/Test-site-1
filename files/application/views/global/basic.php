@@ -66,7 +66,7 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'D
 <div class="body">
 	<div>
 		<div align="right">
-			<img src="<?php echo URL::base(); ?>public/image/system/eye.png" class="eye" ><a href="http://vis.test-site-1.loc/">Версия сайта для слабовидящих</a>
+			<a href="http://vis.test-site-1.loc/" class="eye_link"><img src="<?php echo URL::base(); ?>public/image/system/eye.png" class="eye" >Версия сайта для слабовидящих</a>
 		</div>
 		<div class="hat">
 			<a href="<?php echo URL::base(); ?>"><div class="title">
@@ -93,6 +93,8 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'D
 						<h4>Населению</h4>
 						<ul>
 							<li><a href="http://www.zdrav53-online.ru">Запись на прием к врачу</a></li>
+							<li><a href="<?php echo URL::base(); ?>pricelist">Прейскурант</a></li>
+							<li><a href="<?php echo URL::base(); ?>list_services">Оказываемые услуги</a></li>
 							<li><a href="<?php echo URL::base(); ?>public/content/population/population_information.doc">Полезная информация</a></li>
 						</ul>
 					</li>
@@ -139,13 +141,7 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'D
 					<?php endforeach; ?>
 				</div>
 				<div id="vk_groups"></div>
-				<div class="informer">
-					<!-- Yandex.Metrika informer -->
-					<a href="https://metrika.yandex.ru/stat/?id=35218845&amp;from=informer"
-					target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/35218845/3_0_F1FFBDFF_D1F89DFF_0_pageviews"
-					style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
-					<!-- /Yandex.Metrika informer -->
-				</div>
+				
 			</div>
 			
 	<?php }?>
@@ -157,6 +153,13 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'D
 		<a href="<?php echo URL::base(); ?>">Главная</a>&nbsp|&nbsp<a href="<?php echo URL::base(); ?>menu/news">Новости</a>&nbsp|&nbsp<a href="http://www.zdrav53-online.ru">Записаться на прием</a>
 	</div>
 	<div class="basement">
+		<div class="informer">
+			<!-- Yandex.Metrika informer -->
+			<a href="https://metrika.yandex.ru/stat/?id=35218845&amp;from=informer"
+			target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/35218845/3_0_F1FFBDFF_D1F89DFF_0_pageviews"
+			style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+			<!-- /Yandex.Metrika informer -->
+		</div>
 		<div class="copyright">
 			© 2015 ГОБУЗ "Маловишерская стоматологическая поликлиника"<br>
 			<h5>Все материалы, находящиеся на сайте, охраняются в соответствии с законодательством РФ, в том числе, об авторском праве и смежных правах</h5>
