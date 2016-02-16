@@ -1,5 +1,5 @@
 <h3>КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
-<table class="table_blue">
+<table class="table">
 	<tr>
 		<td>
 			<b>Адрес:</b>
@@ -11,14 +11,14 @@
 			<a href="https://www.google.ru/maps/place/%D0%9C%D0%B0%D0%BB%D0%BE%D0%B2%D0%B8%D1%88%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%9F%D0%BE%D0%BB%D0%B8%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B0/@58.8498066,32.2156305,17.5z/data=!4m2!3m1!1s0x46bc034fc8342b85:0xaff952a37d639460">(Показать на карте)</a>
 		</td>
 	</tr>
-	<tr>
+	<tr class="even">
 		<td>
 			<b>Телефон(факс):</b>
 		</td>
 		<td>
 			<a href="tel:88166031471">8 (816-60) 31-471</a>
 		</td>
-		<td rowspan="6"></td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>
@@ -27,14 +27,16 @@
 		<td>
 			<a href="mailto:MVSTOM@mail.ru">mvstom@mail.ru</a>
 		</td>
+		<td></td>
 	</tr>
-	<tr>
+	<tr class="even">
 		<td>
 			<b>Сайт:</b>
 		</td>
 		<td>
 			<a href="http://mvstomzdrav53.ru/">http://mvstomzdrav53.ru/</a> 
 		</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>
@@ -43,14 +45,16 @@
 		<td>
 			Ядрина Татьяна Петровна
 		</td>
+		<td></td>
 	</tr>
-	<tr>
+	<tr class="even">
 		<td>
 			<b>Заведующий отделением:</b>
 		</td>
 		<td>
 			Байкова Анна Геннадьевна
 		</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>
@@ -59,8 +63,9 @@
 		<td>
 			Александрова Маргарита Александровна<br>Симонова Наталья Владимировна
 		</td>
+		<td></td>
 	</tr>
-	<tr>
+	<tr class="even">
 		<td rowspan="4">
 			<b>Режим работы:</b>
 		</td>
@@ -78,7 +83,7 @@
 		</td>
 		<td><a href="https://www.google.ru/maps/place/%D0%9C%D0%B0%D0%BB%D0%BE%D0%B2%D0%B8%D1%88%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%9F%D0%BE%D0%BB%D0%B8%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B0/@58.8498066,32.2156305,17.5z/data=!4m2!3m1!1s0x46bc034fc8342b85:0xaff952a37d639460">(Показать на карте)</a></td>
 	</tr>
-	<tr>
+	<tr class="even">
 		<td>
 			Стоматологический кабинет по адресу г. Малая Вишера, пер. 2-й Набережный, д. 20 (здание поликлиники ГОБУЗ «Маловишерская ЦРБ») кабинет № 21<br><br>
 			Прием: по средам с 09:00 до 15:30<br><br>

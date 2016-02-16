@@ -1,25 +1,29 @@
-.content table {
+.table {
 	font-size: 14px;
 	border-collapse: collapse;
 	text-align: left;
-	margin-bottom: 25px;
 	width: 775px;
+	background: #D1F89D;
 }
 
-.content th, .content td {
+.table th, .table td {
 	border-style: solid;
 	border-width: 0 1px 1px 0;
 	border-color: white;
 	-moz-border-radius: 4px;
     border-radius: 4px;
     padding: 10px;
-    background: #D1F89D;
     box-shadow: 0 0 1px rgba(0,0,0,0.5);
     text-indent: 8px;
 }
 
 .title_line {
-	background: #b9f56c;
+	background: #85BC3D;
 	font-size: large;
 	font-style: italic;
+	color: white;
+}
+
+.even {
+	background: #E4FFC1;
 }

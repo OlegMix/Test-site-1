@@ -156,7 +156,7 @@ class Controller_Menu extends Controller_Template {
 
         $this->template->link = Model::factory('select') ->fast_link();
 		$this->template->scripts = array('locking');
-		$this->template->styles = array('menu/questionnaire');
+		$this->template->styles = array('menu/questionnaire','menu/table');
 		$this->template->title = 'Анкета';
         $this->template->description = 'Стоматология';
         $this->template->content = $content;

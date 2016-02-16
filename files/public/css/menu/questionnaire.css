@@ -1,9 +1,19 @@
-h4{
+.title_con {
+	padding: 10px;
+	background: #85BC3D;
 	margin-top: 8px;
+	font-size: large;
+	font-style: italic;
+	color: white;
+	border-radius: 4px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    text-indent: 8px;
 }
 
-.questionnaire h4 {
-	text-indent: 5px;
+.even:hover, .line:hover {
+	background: linear-gradient(#04acec,  #0186ba);
+	color: white;
+	text-shadow: #000 0 0 5px;
 }
 
 .name_block {
@@ -25,42 +35,29 @@ h4{
 	float: left;
 }
 
-.field_block input{
+.field_block input {
 	width: 300px;
 	margin-bottom: 5px;
 }
 
-.questionnaire {
-	padding: 10px;
-	width: 755px;
-	height: auto;
-	background: #e0ffff;
-	border-radius: 5px;
-	box-shadow: 0 0 1px rgba(0,0,0,0.5);
-}
-
-.question:hover {
-	background: #B9F1FF;
-	box-shadow: 0 0 2px rgba(0,0,0,0.1);
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-}
-
-.question td{
-	padding: 5px 5px 5px 5px;
-}
-
 .contacts {
 	margin-bottom: 5px;
-	padding: 10px;
-	height: 220px;
-	width: 755px;
+	padding: 20px 10px 10px 10px;
+	height: 170px;
+	width: 754px;
 	background: linear-gradient(to top, #e6e6e6, #fafafa);
 	border-radius: 5px;
 	box-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
 
 .submit {
-	margin: 10px;
+	margin: 10px 0 10px 0;
+	padding: 5px 10px;
+	background: #85BC3D;
+	border-color: #D1F89D;
+	font-size: large;
+	font-style: italic;
+	color: white;
+	cursor: pointer;
 	float: right;
 }

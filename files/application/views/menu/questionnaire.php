@@ -1,7 +1,9 @@
 <h3>АНКЕТА:</h3>
 <form>
+	<div class="title_con">
+		КОНТАКТНАЯ ИНФОРМАЦИЯ
+	</div>
 	<div class="contacts" id="contacts">
-		<h4 >КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
 		<div class="name_block">
 			Имя:<br>
 			Фамилия:<br>
@@ -9,20 +11,23 @@
 			Адрес электронной почты:<br>
 		</div>
 		<div class="field_block">
-			<input class="field" type="text" name="name" disabled><br>
-			<input class="field" type="text" name="family" disabled><br>
-			<input class="field" type="text" name="lastname" disabled><br>
-			<input class="field" type="text" name="mail" disabled><br>
+			<input class="field" type="text" name="name" placeholder="Введите имя" disabled><br>
+			<input class="field" type="text" name="family" placeholder="Введите фамилию" disabled><br>
+			<input class="field" type="text" name="lastname" placeholder="Введите отчество" disabled><br>
+			<input class="field" type="text" name="mail" placeholder="Введите адрес электронной почты" disabled><br>
 		</div>
 		<div class="field_block_2">
 			<input type="checkbox" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете заполнить анкету анонимно
 		</div>
 	</div>
-	<div class="questionnaire">
-		<h4>ОТВЕТЬТЕ ПОЖАЛУЙСТА НА ВОПРОСЫ</h4>
-		<table border="1px">
-		<?php foreach($articles as $article): ?>
-			<tr class="question">
+	<table class="table">
+		<tr class="title_line">
+			<td colspan="3">ОТВЕТЬТЕ ПОЖАЛУЙСТА НА ВОПРОСЫ</td>
+		</tr>
+		<?php
+		$x = 0;
+		foreach($articles as $article): ?>
+			<?php $x = $x + 1; if ( $x%2 == 0 ) { echo "<tr class='even'>"; } else { echo "<tr class='line'>"; }; ?>
 				<td style="width:20px;" align="center">
 					<?php echo $article['id_questions']; ?>
 				</td>
@@ -38,9 +43,6 @@
 				</td>
 			</tr>
 		<?php endforeach; ?>
-		</table>
-		<div style="height:35px;">
-			<input type="submit" class="submit" value="Отправить" >
-		</div>
-	</div>
+	</table>
+	<input type="submit" class="submit" value="Отправить" >
 </form>

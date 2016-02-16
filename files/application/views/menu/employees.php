@@ -1,13 +1,14 @@
 <h3>СПЕЦИАЛИСТЫ:</h3>
-<table class="table_blue">
-	<tr>
-		<td class="title_line">Наименование должности:</td>
-		<td class="title_line">ФИО:</td>
-		<td class="title_line">Номер телефона:</td>
-		<td class="title_line">На обработку персональных данных согласен:</td>
+<table class="table">
+	<tr class="title_line">
+		<td>Наименование должности:</td>
+		<td>ФИО:</td>
+		<td>Номер телефона:</td>
+		<td>На обработку персональных данных согласен:</td>
 	</tr>
-	<?php foreach($employees as $employee): ?>
-		<tr>
+	<?php $x = 0;
+	foreach($employees as $employee): ?>
+		<?php $x = $x + 1; if ( $x%2 == 0 ) { echo "<tr class='even'>"; } else { echo "<tr>"; }; ?>
 			<td style="width:200px;"><?php echo $employee['specialty']; ?></td>
 			<td style="width:200px;"><?php echo $employee['full_name']; ?></td>
 			<td style="width:130px;"><?php echo $employee['phone']; ?></td>

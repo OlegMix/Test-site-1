@@ -11,6 +11,6 @@ function anonymForm(f) {
     	f.family.disabled = 0;
     	f.lastname.disabled = 0;
     	f.mail.disabled = 0;
-    	document.getElementById('contacts').style.background = '#e0ffff';
+    	document.getElementById('contacts').style.background = '#D1F89D';
     }
 }

@@ -1,42 +1,42 @@
 <h3>ФОРУМ:</h3>
 <form>
-	<div class="contacts" id="contacts">
-		<h4 id="qv">ЗАДАТЬ ВОПРОС:</h4>
+	<div>
+		<div id="qv" class="title_con" title="Свернуть/Развернуть форму">
+			ЗАДАТЬ ВОПРОС:&nbsp<sup>(Свернуть/Развернуть)</sup>
+		</div>
 		<div id="question">
-			<div>
-				<div class="block_1">
-					ФИО:
-					<input class="field" type="text" name="fullname" style="width: 330px; float: right;" disabled>
+			<div id="contacts" class="contacts">
+				<div>
+					<div class="name_block">
+						ФИО:<br>
+						Возраст:<br>
+						Село/Город:<br>
+						E'mail:<br>
+					</div>
+					<div class="field_block">
+						<input class="field" type="text" name="fullname" disabled><br>
+						<input class="field" type="text" name="age" disabled maxlength="3"><br>
+						Село<input id="loc1" type="radio" name="locations" disabled>
+						Город<input id="loc2" type="radio" name="locations" disabled><br>
+						<input class="field" type="text" name="mail" disabled><br>
+					</div>
 				</div>
-				<div class="block_1">
-					Возраст:
-					<input class="field" type="text" name="age" style="width: 40px; float: right;" disabled>
+				<div class="anonyms">
+					<input type="checkbox" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете задать вопрос анонимно
 				</div>
+				<textarea placeholder="Введите вопрос..." name="question"></textarea>
 			</div>
-			<div>
-				<div class="block_1">
-					Село/Город:
-					<select size="1" name="locations" style="float: right;" disabled>
-						<option>Село</option>
-						<option>Город</option>
-					</select>
-				</div>
-				<div class="block_1">
-					E'mail:
-					<input class="field" type="text" style="width: 300px; float: right;" name="mail" disabled>
-				</div>
-			</div>
-			<div class="anonyms">
-				<input type="checkbox" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете задать вопрос анонимно
-			</div>
-			<textarea placeholder="Введите вопрос..." name="question"></textarea>
-			<div class="submit">
-				<input type="submit" value="Отправить" />
+			<div align="right">
+				<input type="submit" class="submit" value="Задать вопрос" />	
 			</div>
 		</div>
 	</div>
 	<div class="questionnaire">
-		<h4>ДРУГИЕ ОТВЕТЫ</h4>
-		
+		<div class="title_con">
+			ДРУГИЕ ОТВЕТЫ
+		</div>
+		<div class="answers">
+			Нет отвеченных вопросов...
+		</div>
 	</div>
 </form>
