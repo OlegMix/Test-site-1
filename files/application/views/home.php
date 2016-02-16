@@ -1,7 +1,7 @@
 <h1>Государственное областное бюджетное учреждение здравоохранения «Маловишерская стоматологическая поликлиника»</h1>
 <img src="<?php echo URL::base(); ?>public/image/system/photo_01.png" class="photo">
-<table>
-	<tr>
+<table class="table">
+	<tr class="title_line">
 		<td colspan="3" align="center"><b>Режим работы:</b></td>
 	</tr>
 	<tr>

@@ -14,11 +14,11 @@
 						E'mail:<br>
 					</div>
 					<div class="field_block">
-						<input class="field" type="text" name="fullname" disabled><br>
-						<input class="field" type="text" name="age" disabled maxlength="3"><br>
+						<input class="field" type="text" placeholder="Введите полное имя" name="fullname" disabled><br>
+						<input class="field" type="text" placeholder="Введите ваш возраст" name="age" disabled maxlength="3"><br>
 						Село<input id="loc1" type="radio" name="locations" disabled>
 						Город<input id="loc2" type="radio" name="locations" disabled><br>
-						<input class="field" type="text" name="mail" disabled><br>
+						<input class="field" type="text" placeholder="Введите адрес электронной почты" name="mail" disabled><br>
 					</div>
 				</div>
 				<div class="anonyms">
