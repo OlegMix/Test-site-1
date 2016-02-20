@@ -1,5 +1,5 @@
 <h3>АНКЕТА:</h3>
-<form>
+<form action="<?php echo URL::base(); ?>Insert/respondents" method="post">
 	<div class="title_con">
 		КОНТАКТНАЯ ИНФОРМАЦИЯ
 	</div>
@@ -35,14 +35,14 @@
 					<?php echo $article['text']; ?>
 				</td>
 				<td>
-					<input type="radio" name="assessment_<?php echo $article['id_questions']; ?>" value="1" checked>1
-					<input type="radio" name="assessment_<?php echo $article['id_questions']; ?>" value="2">2
-					<input type="radio" name="assessment_<?php echo $article['id_questions']; ?>" value="3">3
-					<input type="radio" name="assessment_<?php echo $article['id_questions']; ?>" value="4">4
-					<input type="radio" name="assessment_<?php echo $article['id_questions']; ?>" value="5">5
+					<input type="radio" name="assessment[<?php echo $article['id_questions']; ?>]" value="1" checked>1
+					<input type="radio" name="assessment[<?php echo $article['id_questions']; ?>]" value="2">2
+					<input type="radio" name="assessment[<?php echo $article['id_questions']; ?>]" value="3">3
+					<input type="radio" name="assessment[<?php echo $article['id_questions']; ?>]" value="4">4
+					<input type="radio" name="assessment[<?php echo $article['id_questions']; ?>]" value="5">5
 				</td>
 			</tr>
 		<?php endforeach; ?>
 	</table>
-	<input type="submit" class="submit" value="Отправить" >
+	<input type="submit" class="submit" value="Отправить">
 </form>

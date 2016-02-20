@@ -146,13 +146,14 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/questionnaire') ->bind('articles', $articles);
 		$articles = Model::factory('select')->questions();
 
-		if($_POST)
-        {
-            $fullname = Arr::get($_POST, 'family')." ".Arr::get($_POST, 'name')." ".Arr::get($_POST, 'lastname');
-            $mail = Arr::get($_POST, 'mail');
+		// if($_POST)
+  //       {
+  //           $fullname = Arr::get($_POST, 'family')." ".Arr::get($_POST, 'name')." ".Arr::get($_POST, 'lastname');
+  //           $mail = Arr::get($_POST, 'mail');
+  //           $during_questioning = date("Y-m-d H:i:s");
 
-            Model::factory('insert')->create_comment($fullname, $mail);
-        }
+  //           Model::factory('insert')->create_respondents($fullname, $mail, $during_questioning);
+  //       }
 
         $this->template->link = Model::factory('select') ->fast_link();
 		$this->template->scripts = array('locking');
