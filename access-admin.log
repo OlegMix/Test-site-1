@@ -1451,3 +1451,5 @@
 127.0.0.1 - - [03/Feb/2016:17:15:33 +0300] "GET /public/image/system/link.png HTTP/1.1" 304 - "http://admin.test-site-1.loc/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 YaBrowser/15.12.1.6475 Safari/537.36"
 127.0.0.1 - - [03/Feb/2016:17:15:34 +0300] "GET /public/image/system/icon/favicon-16x16.png HTTP/1.1" 304 - "http://admin.test-site-1.loc/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 YaBrowser/15.12.1.6475 Safari/537.36"
 127.0.0.1 - - [04/Feb/2016:09:33:05 +0300] "GET / HTTP/1.1" 200 3569 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 YaBrowser/15.12.1.6475 Safari/537.36"
+127.0.0.1 - - [21/Feb/2016:01:32:30 +0300] "GET / HTTP/1.1" 200 3569 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36"
+127.0.0.1 - - [21/Feb/2016:01:32:32 +0300] "GET /public/image/system/icon/favicon-32x32.png HTTP/1.1" 200 2265 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36"

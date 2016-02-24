@@ -2,20 +2,19 @@
  
 class Model_Insert extends Model
 {
-	public function create_respondents($full_name, $email, $during_questioning, $assessment)
+	public function create_respondents($full_name, $email, $during_questioning)
 	{
-	    return DB::insert('respondents', array('full_name', 'email', 'during_questioning'))
+	    DB::insert('respondents', array('full_name', 'email', 'during_questioning'))
         	->values(array($full_name, $email, $during_questioning))
         	->execute();
-
-        $id = mysql_insert_id();
-
-        foreach ($assessment as $key => $value) {
-        	return DB::insert('survey_results', array('id_questions', 'id_user', 'result'))
-        		->values(array($key, $id, $value))
-        		->execute();
+                $id = mysql_insert_id();
+                return $id;
         }
 
-        
+        public function create_survey($id, $key, $value)
+        {
+                DB::insert('survey_results', array('id_questions', 'id_user', 'result'))
+                        ->values(array($key, $id, $value))
+                        ->execute();
 	}
 }

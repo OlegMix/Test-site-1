@@ -1,0 +1,11 @@
+.status {
+	height: 128px;
+	width: 128px;
+	float: left;
+	margin-right: 50px;
+}
+
+.messege {
+	width: 500px;
+	margin: auto;
+}

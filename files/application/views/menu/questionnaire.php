@@ -11,13 +11,13 @@
 			Адрес электронной почты:<br>
 		</div>
 		<div class="field_block">
-			<input class="field" type="text" name="name" placeholder="Введите имя" disabled><br>
-			<input class="field" type="text" name="family" placeholder="Введите фамилию" disabled><br>
-			<input class="field" type="text" name="lastname" placeholder="Введите отчество" disabled><br>
-			<input class="field" type="text" name="mail" placeholder="Введите адрес электронной почты" disabled><br>
+			<input class="field" type="text" id="name" name="name" placeholder="Введите имя" disabled><br>
+			<input class="field" type="text" id="family" name="family" placeholder="Введите фамилию" disabled><br>
+			<input class="field" type="text" id="lastname" name="lastname" placeholder="Введите отчество" disabled><br>
+			<input class="field" type="text" id="mail" name="mail" placeholder="Введите адрес электронной почты" disabled><br>
 		</div>
 		<div class="field_block_2">
-			<input type="checkbox" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете заполнить анкету анонимно
+			<input type="checkbox" id="anonym" name="anonym" onClick="anonymForm(this.form)" checked> Вы можете заполнить анкету анонимно
 		</div>
 	</div>
 	<table class="table">

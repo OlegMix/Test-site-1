@@ -141,12 +141,10 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'D
 					<?php endforeach; ?>
 				</div>
 				<div id="vk_groups"></div>
-				
 			</div>
-			
 	<?php }?>
 	<div class="content">
-		<?php echo $content; ?>
+		<?php echo($content); ?>
 	</div>
 	<a href="#" class="scrollup">Наверх</a>
 	<div class="basement_menu">
