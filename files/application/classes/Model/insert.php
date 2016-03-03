@@ -17,4 +17,18 @@ class Model_Insert extends Model
                         ->values(array($key, $id, $value))
                         ->execute();
 	}
+
+        public function create_question($fullname, $age, $locations, $gender, $mail, $question)
+        {
+                if (!empty($fullname)&&!empty($age)&&!empty($locations)&&!empty($gender)&&!empty($mail)) {
+                        DB::insert('questions', array('full_name','age','location','gender','email','question'))
+                                ->values(array($fullname, $age, $locations, $gender, $mail, $question))
+                                ->execute();  
+                } else {
+                        DB::insert('questions', array('question'))
+                                ->values(array($question))
+                                ->execute();
+                }
+                
+        }
 }

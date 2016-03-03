@@ -65,5 +65,13 @@ class Model_Select extends Model
             ->where('active', '=', "1")
             ->execute();
     }
+
+    public function question()
+    {
+        return DB::select()
+            ->from("questions")
+            ->where('status', '=', "1")
+            ->execute();
+    }
 }
 

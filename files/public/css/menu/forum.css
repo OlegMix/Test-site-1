@@ -8,7 +8,7 @@
 }
 
 .answers {
-	padding: 20px 10px 10px 10px;
+	padding: 10px 0 10px 0;
 }
 
 .field {
@@ -44,6 +44,7 @@
 .field_block {
 	width: 415px;
 	float: left;
+	line-height: 25px;
 }
 
 #qv { cursor: pointer; }
@@ -82,9 +83,32 @@
 
 .block_2 {
 	float: left;
-	/*width: 240px;*/
 }
 
-/*.block_2 input[type="text"] {
-	width: 220px;
-}*/
+.radio {
+	margin: 0 5px 0 90px;
+}
+
+.answer {
+	font-size: 20px;
+	height: 25px;
+	padding: 10px 10px 10px 10px;
+	border-bottom: 2px dotted #808080;
+}
+
+.answer:last-child {
+	border-bottom: 0px dotted #808080;
+}
+
+.answer:hover {
+	background: #D1F89D;
+	border-radius: 5px;
+}
+
+.pagination {
+	margin: 20px 0 10px 0;
+}
+
+.pagination a{
+	margin: 0 10px 0 10px;
+}

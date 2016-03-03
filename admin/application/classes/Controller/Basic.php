@@ -6,9 +6,9 @@ class Controller_Basic extends Controller_Template {
 
 	public function action_index()
 	{
-		$content = View::factory('home');
-		$this->template->styles = array('style','home');
-		$this->template->title = 'ГОБУЗ "Маловишерская стоматологическая поликлиника"';
+		$content = View::factory('login');
+		$this->template->styles = array('style');
+		$this->template->title = 'Вход';
         $this->template->content = $content;
 	}
 

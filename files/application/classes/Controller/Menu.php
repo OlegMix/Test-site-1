@@ -8,7 +8,6 @@ class Controller_Menu extends Controller_Template {
 	{
 		$content = View::factory('menu/regulations') ->bind('regulations', $regulations);
 		$this->template->title = 'Нормативные документы';
-        $this->template->description = 'Стоматология';
         $regulations = Model::factory('select') ->regulations();
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
@@ -19,7 +18,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/pricelist');
 		$this->template->title = 'Прейскурант';
 		$this->template->styles = array('menu/pricelist');
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -29,7 +27,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/list_services');
 		$this->template->title = 'Перечень оказываемых услуг';
 		$this->template->styles = array('menu/list_services');
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -39,7 +36,6 @@ class Controller_Menu extends Controller_Template {
 	{
 		$content = View::factory('menu/charter') ->bind('charter', $charter);
 		$this->template->title = 'Устав учреждения';
-        $this->template->description = 'Стоматология';
         $charter = Model::factory('select') ->charter();
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
@@ -50,7 +46,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/infgeneral');
 		$this->template->title = 'Общая информация';
 		$this->template->styles = array('menu/table');
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -60,7 +55,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/structure');
 		$this->template->title = 'Структура учреждения';
 		$this->template->styles = array('menu/structure');
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -70,9 +64,11 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/forum');
 		$this->template->title = 'Форум';
 		$this->template->styles = array('menu/forum');
+		$total_items = 12; //Это вы как будто посчитали количество элементов
+		$content->pagination = Pagination::factory(array('total_items' => $total_items));
 		$this->template->link = Model::factory('select') ->fast_link();
+		$content->questions = Model::factory('select') ->question();
 		$this->template->scripts = array('locking2');
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 
@@ -80,7 +76,6 @@ class Controller_Menu extends Controller_Template {
 	{
 		$content = View::factory('menu/goalsobj');
 		$this->template->title = 'Декларация целей и задач';
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -92,7 +87,6 @@ class Controller_Menu extends Controller_Template {
 		$this->template->link = Model::factory('select') ->fast_link();
 		$this->template->styles = array('menu/table');
 		$this->template->title = 'Вакансии';
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 
@@ -101,7 +95,6 @@ class Controller_Menu extends Controller_Template {
 		$content = View::factory('menu/nocorruption');
 		$this->template->styles = array('menu/nocorruption');
 		$this->template->title = 'Противодействие коррупции';
-        $this->template->description = 'Стоматология';
         $this->template->link = Model::factory('select') ->fast_link();
         $this->template->content = $content;
 	}
@@ -110,7 +103,6 @@ class Controller_Menu extends Controller_Template {
 	{
 		$id = $this->request->param('id');
  		
- 		$this->template->description = 'Стоматология';
 
         if($id) {
             $content = View::factory('pages/news') ->bind('news', $news);
@@ -136,7 +128,6 @@ class Controller_Menu extends Controller_Template {
 	{
 		$content = View::factory('menu');
 		$this->template->title = 'Качество работы';
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 
@@ -159,7 +150,6 @@ class Controller_Menu extends Controller_Template {
 		$this->template->scripts = array('locking');
 		$this->template->styles = array('menu/questionnaire','menu/table');
 		$this->template->title = 'Анкета';
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 
@@ -169,7 +159,6 @@ class Controller_Menu extends Controller_Template {
 		$this->template->link = Model::factory('select') ->fast_link();
 		$this->template->styles = array('menu/table');
 		$this->template->title = 'Контактная информация';
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 
@@ -180,7 +169,6 @@ class Controller_Menu extends Controller_Template {
 		$this->template->link = Model::factory('select') ->fast_link();
 		$this->template->styles = array('menu/table');
 		$this->template->title = 'Наши специалисты';
-        $this->template->description = 'Стоматология';
         $this->template->content = $content;
 	}
 } // End

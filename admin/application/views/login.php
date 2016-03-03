@@ -1,4 +1,4 @@
-<form method="post" accept-charset="utf-8"> 
+<form method="post" action="<?php echo URL::base(); ?>Auth/login" accept-charset="utf-8"> 
    	<label for="username">Логин:</label> 
    	<input id="username" type="text" name="username"/> 
    	<br/> 

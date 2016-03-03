@@ -20,6 +20,8 @@
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="theme-color" content="#ffffff">
 
+<!-- <link href="<?php echo URL::base(); ?>public/css/style.css" rel="stylesheet" type="text/css" /> -->
+
 <?php foreach($styles as $style): ?>
     <link href="<?php echo URL::base(); ?>public/css/<?php echo $style; ?>.css" rel="stylesheet" type="text/css" />
 <?php endforeach; ?>

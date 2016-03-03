@@ -2,16 +2,16 @@
 
 return array(
 
-	'driver'       => 'orm',
+	'driver'       => 'file',
 	'hash_method'  => 'sha256',
-	'hash_key'     => 'b3154acf3a344170077d11bdb5fff31532f679a1919e716a02',
-	'lifetime'     => 1209600,
+	'hash_key'     => 'o24091996',
+	'lifetime'     => 36000,
 	'session_type' => Session::$default,
 	'session_key'  => 'auth_user',
 
 	// Username/password combinations for the Auth File driver
 	'users' => array(
-		// 'admin' => 'b3154acf3a344170077d11bdb5fff31532f679a1919e716a02',
+		'Admin' => '8e06544cc4b5476d2241a7240208421472b62611bd12c1c67c4d79c06c711009', 
 	),
 
 );

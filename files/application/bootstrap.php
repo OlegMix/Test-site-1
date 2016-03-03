@@ -125,7 +125,8 @@ Kohana::modules(array(
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
-	 'database'   => MODPATH.'database',   // Database access
+	'database'   => MODPATH.'database',   // Database access
+	'pagination' => MODPATH.'pagination', // Pagination
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'minion'     => MODPATH.'minion',     // CLI Tasks
 	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
@@ -154,11 +155,17 @@ Route::set('search','<action>', array('action' => 'search'))
 		'action'     => 'search',
 	));
 
-Route::set('menu','<action>', array('action' => 'forum|list_services|pricelist|regulations|charter|goals_and_objectives|structure|general_information|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
+Route::set('menu','<action>', array('action' => 'list_services|pricelist|regulations|charter|goals_and_objectives|structure|general_information|population|vacancies|nocorruption|quality|contacts|employees|questionnaire'))
 	->defaults(array(
 		'controller' => 'Menu',
 	));
-	
+
+Route::set('pagination_forum', 'forum(/<page>)', array('page' => '[0-9]+'))
+        ->defaults(array(
+            'controller' => 'Menu',
+            'action'     => 'forum',
+        ));
+
 Route::set('page_news','news(/<id>.html)', array('id' => '.+'))
 	->defaults(array(
 		'controller' => 'Menu',
